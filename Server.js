@@ -24,6 +24,7 @@ app.use(express.static("public"))
 
 app.use("/api/user", require("./routes/userRoutes"));
 app.use("/api", require("./routes/teamRoutes"));
+app.use("/api", require("./routes/voteRoutes"))
 
 connectDb();
 
